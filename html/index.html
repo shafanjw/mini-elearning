@@ -4,19 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-learning Platform</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body class="bg-gray-100">
-    <header class="bg-blue-500 text-white p-4">
-        <h1 class="text-2xl">Selamat datang di Platform E-Learning!</h1>
+    <header class="ml-10 bg-blue-300 text-white p-4 flex items-center">
+        <div class="flex items-center ml-10">
+            <h1 class="text-2xl font-bold ml-2">Selamat datang di Platform E-Learning!</h1>
+        </div>
+
+        <nav class="bg-blue-500 text-white w-38 h-full fixed top-0 left-0 overflow-y-auto">
+            <img src="/images/logo.png" alt="Logo" class="h-10 ml-4 mr-2 mb-2 mt-2">
+            <ul class="py-4">
+                <li><a href="#" class="block px-4 py-2 hover:bg-blue-600">Beranda</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-blue-600">Pelajaran</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-blue-600">Kuis</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-blue-600">Tentang</a></li>
+            </ul>
+        </nav>
     </header>
-    <main class="container mx-auto py-4">
+
+    <main class="ml-40 container mx-auto py-4">
         <section id="course-list" class="mb-8">
             <h2 class="text-xl font-bold mb-2">Pelajaran yang Tersedia</h2>
             <ul>
-                <li><a href="#" class="text-blue-500 hover:underline">Pelajaran 1</a></li>
-                <li><a href="#" class="text-blue-500 hover:underline">Pelajaran 2</a></li>
-                <li><a href="#" class="text-blue-500 hover:underline">Pelajaran 3</a></li>
+                <li><a href="#" class="text-blue-500 hover:underline">Flexbox</a></li>
+                <li><a href="#" class="text-blue-500 hover:underline">Navigation Bar</a></li>
+                <li><a href="#" class="text-blue-500 hover:underline">Transition & Stylings</a></li>
             </ul>
         </section>
         <section id="quiz" class="bg-white rounded-lg shadow-md p-6">
@@ -45,6 +58,11 @@
             <div id="results" class="mt-4"></div>
         </section>
     </main>
-    <script src="js/scripts.js"></script>
+
+    <footer class="mt-12 bg-blue-300 text-white text-center py-2">
+        &copy; 2024 Shafa Najwa Nathania. ♥ Sistech!
+    </footer>
+
+    <script src="/js/scripts.js"></script>
 </body>
 </html>
