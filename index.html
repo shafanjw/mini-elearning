@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-learning Platform</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Selamat datang di Platform E-Learning!</h1>
+    </header>
+    <main>
+        <section id="course-list">
+            <h2>Pelajaran yang Tersedia</h2>
+            <ul>
+                <li><a href="#">Pelajaran 1</a></li>
+                <li><a href="#">Pelajaran 2</a></li>
+                <li><a href="#">Pelajaran 3</a></li>
+            </ul>
+        </section>
+        <section id="quiz">
+            <h2>Kuis Interaktif</h2>
+            <form id="quiz-form">
+                <div>
+                    <label>Pertanyaan 1: Apa itu HTML?</label>
+                    <input type="radio" name="q1" value="HyperText Markup Language"> HyperText Markup Language<br>
+                    <input type="radio" name="q1" value="HighText Machine Language"> HighText Machine Language<br>
+                </div>
+                <div>
+                    <label>Pertanyaan 2: Apa kepanjangan dari CSS?</label>
+                    <input type="radio" name="q2" value="Cascading Style Sheets"> Cascading Style Sheets<br>
+                    <input type="radio" name="q2" value="Cascading System Sheets"> Cascading System Sheets<br>
+                </div>
+                <button type="button" onclick="checkAnswers()">Submit</button>
+            </form>
+            <div id="results"></div>
+        </section>
+    </main>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
