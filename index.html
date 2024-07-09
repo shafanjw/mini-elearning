@@ -6,35 +6,43 @@
     <title>E-learning Platform</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <header>
-        <h1>Selamat datang di Platform E-Learning!</h1>
+<body class="bg-gray-100">
+    <header class="bg-blue-500 text-white p-4">
+        <h1 class="text-2xl">Selamat datang di Platform E-Learning!</h1>
     </header>
-    <main>
-        <section id="course-list">
-            <h2>Pelajaran yang Tersedia</h2>
+    <main class="container mx-auto py-4">
+        <section id="course-list" class="mb-8">
+            <h2 class="text-xl font-bold mb-2">Pelajaran yang Tersedia</h2>
             <ul>
-                <li><a href="#">Pelajaran 1</a></li>
-                <li><a href="#">Pelajaran 2</a></li>
-                <li><a href="#">Pelajaran 3</a></li>
+                <li><a href="#" class="text-blue-500 hover:underline">Pelajaran 1</a></li>
+                <li><a href="#" class="text-blue-500 hover:underline">Pelajaran 2</a></li>
+                <li><a href="#" class="text-blue-500 hover:underline">Pelajaran 3</a></li>
             </ul>
         </section>
-        <section id="quiz">
-            <h2>Kuis Interaktif</h2>
+        <section id="quiz" class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-xl font-bold mb-4">Kuis Interaktif</h2>
             <form id="quiz-form">
-                <div>
-                    <label>Pertanyaan 1: Apa itu HTML?</label>
-                    <input type="radio" name="q1" value="HyperText Markup Language"> HyperText Markup Language<br>
-                    <input type="radio" name="q1" value="HighText Machine Language"> HighText Machine Language<br>
+                <div class="mb-4">
+                    <label class="block font-semibold">Pertanyaan 1: Apa itu HTML?</label>
+                    <div>
+                        <input type="radio" name="q1" value="HyperText Markup Language" id="q1a1" class="mr-2">
+                        <label for="q1a1">HyperText Markup Language</label><br>
+                        <input type="radio" name="q1" value="HighText Machine Language" id="q1a2" class="mr-2">
+                        <label for="q1a2">HighText Machine Language</label><br>
+                    </div>
                 </div>
-                <div>
-                    <label>Pertanyaan 2: Apa kepanjangan dari CSS?</label>
-                    <input type="radio" name="q2" value="Cascading Style Sheets"> Cascading Style Sheets<br>
-                    <input type="radio" name="q2" value="Cascading System Sheets"> Cascading System Sheets<br>
+                <div class="mb-4">
+                    <label class="block font-semibold">Pertanyaan 2: Apa kepanjangan dari CSS?</label>
+                    <div>
+                        <input type="radio" name="q2" value="Cascading Style Sheets" id="q2a1" class="mr-2">
+                        <label for="q2a1">Cascading Style Sheets</label><br>
+                        <input type="radio" name="q2" value="Cascading System Sheets" id="q2a2" class="mr-2">
+                        <label for="q2a2">Cascading System Sheets</label><br>
+                    </div>
                 </div>
-                <button type="button" onclick="checkAnswers()">Submit</button>
+                <button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600" type="button" onclick="checkAnswers()">Submit</button>
             </form>
-            <div id="results"></div>
+            <div id="results" class="mt-4"></div>
         </section>
     </main>
     <script src="js/scripts.js"></script>

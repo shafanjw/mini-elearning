@@ -1,0 +1,17 @@
+# Dependency directories
+/node_modules
+
+# Tailwind CSS build output (if output directory is different)
+/css/styles.css
+
+# Editor directories and files
+/.vscode
+/.idea
+*.iml
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
